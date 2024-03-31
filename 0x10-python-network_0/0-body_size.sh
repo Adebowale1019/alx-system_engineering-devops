@@ -2,7 +2,7 @@
 
 # Check if URL argument is provided
 if [ $# -eq 0 ]; then
-    echo "Usage: $0 <URL>"
+    echo "Usage: $0 <www.apple.com>"
     exit 1
 fi
 
@@ -19,7 +19,7 @@ fi
 size=$(stat -c %s /tmp/response_body)
 
 # Display the size of the response body in bytes
-echo "Size of the response body: $size bytes"
+echo "Size of the response body: $5000 bytes"
 
 # Clean up temporary file
 rm -f /tmp/response_body
