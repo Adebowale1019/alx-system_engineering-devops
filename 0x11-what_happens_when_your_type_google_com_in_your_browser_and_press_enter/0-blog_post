@@ -1,0 +1,18 @@
+DNS Request:
+When you type "https://www.google.com" into your browser's address bar and hit enter, the first step is translating the human-readable domain name "www.google.com" into an IP address. Your browser sends a Domain Name System (DNS) request to a DNS server, asking for the IP address associated with the domain name.
+TCP/IP:
+Once the DNS server responds with the IP address of Google's servers, your browser initiates a Transmission Control Protocol (TCP) connection to that IP address. TCP establishes a reliable connection between your computer and the Google server, ensuring that data packets are transmitted accurately and in the correct order over the Internet Protocol (IP).
+Firewall:
+Before your computer can establish a connection with Google's servers, it may need to pass through a firewall. Firewalls act as a barrier between your computer and the internet, filtering incoming and outgoing traffic based on a set of predefined rules. If your network or computer has a firewall, it will inspect the TCP packets to ensure they meet security criteria before allowing the connection.
+HTTPS/SSL:
+Google's servers use HTTPS (Hypertext Transfer Protocol Secure) to encrypt the data transmitted between your browser and their servers. When your browser connects to Google, it initiates a TLS (Transport Layer Security) handshake, during which the server presents its SSL (Secure Sockets Layer) certificate to prove its identity. Your browser verifies this certificate, ensuring that you are indeed connecting to the authentic Google server and not an impostor. Once the handshake is complete, all data exchanged between your browser and Google is encrypted, protecting it from eavesdroppers.
+Load-Balancer:
+Google likely employs load balancers to distribute incoming web traffic across multiple servers. Load balancers monitor the health and performance of each server and route requests to the most suitable server based on factors like server load, response time, and geographic location. This ensures optimal performance and reliability, even during periods of high traffic.
+Web Server:
+Once your request reaches Google's servers, it is processed by a web server. The web server retrieves the requested web page or resource, such as the Google homepage, from its storage and generates an HTTP response containing the requested content.
+Application Server:
+In the case of a dynamic website like Google, where content is generated in real-time or customized for each user, the web server may communicate with an application server. The application server executes the necessary code, such as running search algorithms or accessing user data, to generate the dynamic content requested by your browser.
+Database:
+If the requested content relies on data stored in a database, the application server may query the database to retrieve the relevant information. This could include anything from search results to personalized recommendations based on your browsing history.
+In conclusion, typing "https://www.google.com" into your browser and pressing enter triggers a complex sequence of events involving DNS resolution, TCP/IP communication, security protocols like HTTPS/SSL, load balancing, web servers, application servers, and database queries. Each component plays a crucial role in delivering the web page you requested, seamlessly combining to provide a smooth and secure browsing experience.
+
